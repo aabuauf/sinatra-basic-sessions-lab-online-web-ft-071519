@@ -9,4 +9,9 @@ end
 get '/' do
   erb :index
 end
+
+post '/checkout' do
+  @item = params[:item]
+ 
+end
 end
