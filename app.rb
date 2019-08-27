@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
 configure do
@@ -11,6 +12,7 @@ get '/' do
 end
 
 post '/checkout' do
+  binding.pry
   @item = params[:item]
  erb :checkout
 end
