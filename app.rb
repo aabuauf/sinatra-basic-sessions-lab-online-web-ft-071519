@@ -12,7 +12,7 @@ get '/' do
 end
 
 post '/checkout' do
-  binding.pry
+  
   @item = params[:params][:item]
  erb :checkout
 end
