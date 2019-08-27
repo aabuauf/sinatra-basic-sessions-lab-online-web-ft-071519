@@ -13,7 +13,7 @@ end
 
 post '/checkout' do
   
-  @item = params[:params][:item]
+  @item = params[:item]
  erb :checkout
 end
 end
