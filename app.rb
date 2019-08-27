@@ -9,7 +9,7 @@ get '/' do
 end
 
 post '/checkout' do
- 
+  @session = session
   @item = params[:item]
  erb :checkout
 end
